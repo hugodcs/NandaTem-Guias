@@ -11,3 +11,4 @@ https://nandatem.com.br, publicado gratuitamente via GitHub Pages.
 4. Aguarde alguns minutos e acesse `https://<seu-usuario>.github.io/nandatem-pages/`.
 
 O site já aponta backlinks para as páginas internas da Nanda Tem.
+# GooglePages-NandaTem
