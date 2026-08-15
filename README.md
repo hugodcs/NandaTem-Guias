@@ -1,14 +1,18 @@
-# Nanda Tem — Site de Apoio (Backlink)
+# Nanda Tem Guias
 
-Site HTML estático usado como propriedade de backlink para
-https://nandatem.com.br, publicado gratuitamente via GitHub Pages.
+Microsite editorial estático de apoio à Nanda Tem.
 
-## Publicar no GitHub Pages
+## Publicação
+GitHub Pages: branch `main`, pasta `/ (root)`.
 
-1. Crie um repositório no GitHub (ex.: `nandatem-pages`).
-2. Faça push desta pasta para a branch `main`.
-3. Em **Settings → Pages**, escolha a branch `main` / pasta `/ (root)`.
-4. Aguarde alguns minutos e acesse `https://<seu-usuario>.github.io/nandatem-pages/`.
+## Estrutura
+- `index.html` — homepage
+- `guias/` — índice e artigos
+- `sobre/` — proposta editorial
+- `assets/css/style.css` — identidade visual
+- `robots.txt` e `sitemap.xml` — rastreamento/indexação
+- `404.html` — página de erro
+- `.nojekyll` — publicação estática direta
 
-O site já aponta backlinks para as páginas internas da Nanda Tem.
-# GooglePages-NandaTem
+## Regra editorial
+Não duplicar descrições de produtos da loja. Não publicar preços fixos. Backlinks devem ser contextuais e relevantes ao conteúdo.

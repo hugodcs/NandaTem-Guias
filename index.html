@@ -1,181 +1,38 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nanda Tem — Variedades para Você | Guia de Compras Online</title>
-  <meta name="description" content="Conheça a Nanda Tem, loja online de variedades com entrega para todo o Brasil. Casa, bebê, pets, beleza, eletrônicos e muito mais com atendimento humano." />
-  <style>
-    :root{
-      --rosa:#e85a9a;          /* rosa da marca */
-      --rosa-esc:#c43f7e;      /* rosa mais escuro p/ hover/texto */
-      --taupe:#8b6f47;         /* bronze/taupe acento */
-      --taupe-claro:#f5f0eb;   /* fundo creme */
-      --borda:#e8ddd2;         /* borda suave */
-      --texto:#27272a;
-      --texto-suave:#75593a;   /* texto em tom bronze */
-      --branco:#fff;
-      --verde:#25d366;         /* whatsapp */
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;color:var(--texto);background:var(--taupe-claro);line-height:1.6}
-    a{color:var(--rosa-esc);text-decoration:none}
-    a:hover{text-decoration:underline}
-
-    /* HERO */
-    header.hero{
-      background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-esc) 100%);
-      color:#fff;text-align:center;padding:64px 20px;
-    }
-    header.hero h1{font-size:2.8rem;letter-spacing:.5px;margin-bottom:6px}
-    header.hero .sub{font-size:1.2rem;opacity:.96;font-weight:500}
-    header.hero .selo{
-      display:inline-block;margin-top:14px;background:rgba(255,255,255,.18);
-      border:1px solid rgba(255,255,255,.4);padding:6px 16px;border-radius:30px;font-size:.9rem;
-    }
-
-    /* NAV (estilo menu de categorias do site) */
-    nav{background:var(--branco);border-bottom:2px solid var(--rosa);position:sticky;top:0;z-index:10;box-shadow:0 2px 6px rgba(139,111,71,.08)}
-    nav ul{display:flex;flex-wrap:wrap;justify-content:center;list-style:none;max-width:1100px;margin:0 auto}
-    nav a{display:block;padding:14px 16px;color:var(--texto);font-weight:600;font-size:.9rem}
-    nav a:hover{color:var(--rosa-esc);background:var(--taupe-claro);text-decoration:none}
-
-    main{max-width:1100px;margin:0 auto;padding:24px 16px}
-    section{background:var(--branco);border:1px solid var(--borda);border-radius:14px;padding:30px;margin:24px 0}
-    h2{color:var(--rosa-esc);font-size:1.7rem;margin-bottom:14px;border-left:5px solid var(--rosa);padding-left:12px}
-    h3{color:var(--taupe);margin:18px 0 8px;font-size:1.2rem}
-    p{margin-bottom:14px;color:#3a3a3a}
-
-    .btn{display:inline-block;background:var(--rosa);color:#fff;padding:13px 28px;border-radius:30px;font-weight:700}
-    .btn:hover{background:var(--rosa-esc);text-decoration:none}
-
-    /* GRID DE CATEGORIAS */
-    ul.links{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:8px}
-    ul.links li{background:var(--taupe-claro);border:1px solid var(--borda);border-left:4px solid var(--taupe);border-radius:8px;padding:12px 14px;transition:.2s}
-    ul.links li:hover{border-left-color:var(--rosa);background:#fff}
-    ul.links a{font-weight:600;color:var(--texto-suave)}
-    ul.links a:hover{color:var(--rosa-esc)}
-
-    /* CARDS DE PRODUTO (estilo "Seleção da loja") */
-    .grid-prod{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:14px}
-    .card{background:var(--taupe-claro);border:1px solid var(--borda);border-radius:12px;padding:16px;text-align:center}
-    .card .nome{font-weight:700;color:var(--texto);display:block;margin:8px 0 4px}
-    .card .preco{color:var(--rosa-esc);font-weight:800;font-size:1.05rem}
-    .card a.nome:hover{color:var(--rosa-esc);text-decoration:none}
-
-    /* BLOCOS DE APOIO */
-    .apoio{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .apoio a{background:var(--taupe-claro);border:1px solid var(--borda);padding:8px 14px;border-radius:20px;font-size:.9rem;font-weight:600;color:var(--texto-suave)}
-    .apoio a:hover{color:var(--rosa-esc);border-color:var(--rosa)}
-
-    footer{background:#1f1b18;color:#cfc4ba;text-align:center;padding:34px 20px;margin-top:34px;font-size:.9rem}
-    footer a{color:#f6b8d4}
-    .aviso{font-size:.85rem;color:var(--texto-suave);margin-top:14px}
-    .whats{color:var(--verde);font-weight:700}
-  </style>
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nanda Tem Guias | Dicas para casa, pets, família e dia a dia</title>
+<meta name="description" content="Guias e dicas da Nanda Tem para ajudar você a escolher produtos para casa, cozinha, pets, bebê e rotina com mais informação.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#d94f8a">
+<link rel="canonical" href="https://hugodcs.github.io/NandaTem-Guias/">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta property="og:locale" content="pt_BR"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Nanda Tem Guias">
+<meta property="og:title" content="Nanda Tem Guias | Dicas para casa, pets, família e dia a dia">
+<meta property="og:description" content="Guias e dicas da Nanda Tem para ajudar você a escolher produtos para casa, cozinha, pets, bebê e rotina com mais informação.">
+<meta property="og:url" content="https://hugodcs.github.io/NandaTem-Guias/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Nanda Tem Guias | Dicas para casa, pets, família e dia a dia", "url": "https://hugodcs.github.io/NandaTem-Guias/", "description": "Guias e dicas da Nanda Tem para ajudar você a escolher produtos para casa, cozinha, pets, bebê e rotina com mais informação.", "inLanguage": "pt-BR", "publisher": {"@type": "Organization", "name": "Nanda Tem", "url": "https://nandatem.com.br/"}}</script>
 </head>
-<body>
-
-<header class="hero">
-  <h1>Nanda Tem</h1>
-  <div class="sub">Seu dia a dia, mais prático — Variedades para Você</div>
-  <div class="selo">Compra segura · Atendimento humano · Entrega para todo o Brasil</div>
-</header>
-
-<nav>
-  <ul>
-    <li><a href="#inicio">Início</a></li>
-    <li><a href="#sobre">Quem Somos</a></li>
-    <li><a href="#categorias">Categorias</a></li>
-    <li><a href="#dicas">Dicas</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
-
-<main>
-
-  <section id="inicio">
-    <h2>Bem-vindo à Nanda Tem</h2>
-    <p>A <strong>Nanda Tem</strong> é uma loja online de variedades que ajuda o consumidor a encontrar produtos úteis para a rotina, com atendimento humano e suporte antes e depois da compra. Com base em Niterói/RJ, a loja atende todo o Brasil por meio de um e-commerce seguro, com Pix, cartão, entrega nacional e troca em até 7 dias.</p>
-    <p>Se você busca utilidades domésticas, presentes, itens para pets, bebê ou eletrônicos acessíveis, conheça o catálogo completo na <a href="https://nandatem.com.br" target="_blank" rel="noopener">Nanda Tem — loja online de variedades</a>.</p>
-    <a class="btn" href="https://nandatem.com.br/produtos" target="_blank" rel="noopener">Ver todos os produtos</a>
-  </section>
-
-  <section id="sobre">
-    <h2>Quem Somos</h2>
-    <p>A <a href="https://nandatem.com.br/sobre" target="_blank" rel="noopener">Nanda Tem</a> é uma operação formal de varejo online (CNPJ 63.868.792/0001-30 — Fernanda dos Santos Trindade), com canais de atendimento reais e políticas públicas de troca, prazo e privacidade.</p>
-    <h3>Diferenciais</h3>
-    <p>• Acompanhamento transparente do pedido (antes e depois da compra).<br/>
-       • Atendimento por e-mail e WhatsApp.<br/>
-       • Produtos selecionados para o dia a dia: casa, bebê, pets, beleza e mais.</p>
-    <p>Saiba mais em <a href="https://nandatem.com.br/sobre" target="_blank" rel="noopener">Quem Somos — Nanda Tem</a>.</p>
-  </section>
-
-  <section id="categorias">
-    <h2>O que você encontra na Nanda Tem</h2>
-    <p>Abaixo, as principais categorias da loja. Clique para ir direto ao catálogo:</p>
-    <ul class="links">
-      <li><a href="https://nandatem.com.br/categorias/bebe" target="_blank" rel="noopener">Compre produtos para bebê na Nanda Tem</a></li>
-      <li><a href="https://nandatem.com.br/categorias/beleza-e-cuidado-pessoais" target="_blank" rel="noopener">Beleza e cuidado pessoal com entrega nacional</a></li>
-      <li><a href="https://nandatem.com.br/categorias/calcados-roupas-e-bolsas" target="_blank" rel="noopener">Roupas, calçados e bolsas online</a></li>
-      <li><a href="https://nandatem.com.br/categorias/cama-mesa-e-banho" target="_blank" rel="noopener">Cama, mesa e banho para o lar</a></li>
-      <li><a href="https://nandatem.com.br/categorias/casa-moveis-e-decoracao" target="_blank" rel="noopener">Decoração e móveis para casa</a></li>
-      <li><a href="https://nandatem.com.br/categorias/eletronicos" target="_blank" rel="noopener">Eletrônicos e acessórios acessíveis</a></li>
-      <li><a href="https://nandatem.com.br/categorias/esporte-e-lazer" target="_blank" rel="noopener">Esporte e lazer para toda a família</a></li>
-      <li><a href="https://nandatem.com.br/categorias/ferramentas" target="_blank" rel="noopener">Ferramentas e utilidades para o lar</a></li>
-      <li><a href="https://nandatem.com.br/categorias/garagem-e-jardinagem" target="_blank" rel="noopener">Jardinagem e garagem</a></li>
-      <li><a href="https://nandatem.com.br/categorias/jogos-brinquedos-e-hobbies" target="_blank" rel="noopener">Brinquedos e hobbies</a></li>
-      <li><a href="https://nandatem.com.br/categorias/petshop" target="_blank" rel="noopener">Pet Shop com entrega para todo o Brasil</a></li>
-      <li><a href="https://nandatem.com.br/categorias/saude-e-bem-estar" target="_blank" rel="noopener">Saúde e bem-estar</a></li>
-      <li><a href="https://nandatem.com.br/categorias/utilidades-domesticas" target="_blank" rel="noopener">Utilidades domésticas práticas</a></li>
-    </ul>
-  </section>
-
-  <section id="dicas">
-    <h2>Dicas para o dia a dia</h2>
-
-    <h3>Organização da cozinha</h3>
-    <p>Manter a cozinha organizada economiza tempo. Um <a href="https://nandatem.com.br/produto/kit-utensilios-de-cozinha-silicone-7-pecas-rosa" target="_blank" rel="noopener">kit de utensílios de cozinha de silicone</a> ajuda no preparo e na limpeza. Para hidratar durante o dia, uma <a href="https://nandatem.com.br/produto/garrafa-termica-inoxidavel-1-l-branca" target="_blank" rel="noopener">garrafa térmica inox de 1L</a> é prática e durável.</p>
-
-    <h3>Lazer em casa</h3>
-    <p>Para diversão em família, um <a href="https://nandatem.com.br/produto/jogo-de-dardos-magnetico-46x35-cm-com-6-dardos" target="_blank" rel="noopener">jogo de dardos magnético</a> e uma <a href="https://nandatem.com.br/produto/mini-caixa-de-som-bluetooth-com-microfone-rgb-5-w" target="_blank" rel="noopener">mini caixa de som Bluetooth com RGB</a> tornam o fim de semana mais divertido.</p>
-
-    <h3>Cuidados com pet e bebê</h3>
-    <p>Quem tem pets ou crianças encontra opções como o <a href="https://nandatem.com.br/produto/kit-alimentacao-infantil-silicone-com-ventosa-e-babador-azul" target="_blank" rel="noopener">kit de alimentação infantil em silicone</a> e itens do <a href="https://nandatem.com.br/categorias/petshop" target="_blank" rel="noopener">Pet Shop Nanda Tem</a>.</p>
-
-    <h3>Seleção da loja</h3>
-    <div class="grid-prod">
-      <div class="card"><a class="nome" href="https://nandatem.com.br/produto/mini-bicicleta-ciclo-ergometro-portatil-fisioterapia" target="_blank" rel="noopener">Mini Bicicleta Ergômetro Portátil</a><span class="preco">R$ 128,63</span></div>
-      <div class="card"><a class="nome" href="https://nandatem.com.br/produto/maquina-eletrica-de-mini-bolinhos-bichinhos-7-cavidades-110-v" target="_blank" rel="noopener">Máquina de Mini Bolinhos 7 Cavidades</a><span class="preco">R$ 126,08</span></div>
-      <div class="card"><a class="nome" href="https://nandatem.com.br/produto/kit-mochila-escolar-infantil-princesas-com-acessorios-pink" target="_blank" rel="noopener">Mochila Escolar Infantil Princesas</a><span class="preco">R$ 77,91</span></div>
-      <div class="card"><a class="nome" href="https://nandatem.com.br/produto/kit-luz-camarim-com-10-lampadas-led-usb-3-cores" target="_blank" rel="noopener">Kit Luz Camarim LED USB</a><span class="preco">R$ 54,64</span></div>
-      <div class="card"><a class="nome" href="https://nandatem.com.br/produto/furadeira-parafusadeira-sem-fio-48v" target="_blank" rel="noopener">Furadeira Parafusadeira Sem Fio 48V</a><span class="preco">R$ 202,56</span></div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <h2>Fale com a Nanda Tem</h2>
-    <p>• WhatsApp: <span class="whats">(21) 96688-1603</span> — <a href="https://wa.me/5521966881603" target="_blank" rel="noopener">fale no WhatsApp</a><br/>
-       • E-mail: atendimento@nandatem.com.br<br/>
-       • Horário: Seg-Sex 09:00–18:00, Sáb 09:00–12:00<br/>
-       • Endereço: Estrada Washington Luís, 415 — Sapê — Niterói/RJ</p>
-    <p>Acesse também: <a href="https://nandatem.com.br" target="_blank" rel="noopener">Loja oficial Nanda Tem</a></p>
-    <div class="apoio">
-      <a href="https://nandatem.com.br/rastrear" target="_blank" rel="noopener">Rastrear pedido</a>
-      <a href="https://nandatem.com.br/prazos" target="_blank" rel="noopener">Fretes e prazos</a>
-      <a href="https://nandatem.com.br/trocas" target="_blank" rel="noopener">Trocas</a>
-      <a href="https://nandatem.com.br/faq" target="_blank" rel="noopener">FAQ</a>
-      <a href="https://nandatem.com.br/privacidade" target="_blank" rel="noopener">Privacidade</a>
-      <a href="https://nandatem.com.br/termos" target="_blank" rel="noopener">Termos</a>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <p>Conteúdo de apoio à <a href="https://nandatem.com.br" target="_blank" rel="noopener">Nanda Tem</a> — Variedades para Você.</p>
-  <p>CNPJ 63.868.792/0001-30 · Niterói/RJ · Atendimento nacional</p>
-</footer>
-
-</body>
-</html>
+<body><div class="topbar">Conteúdo para escolhas mais práticas · Nanda Tem</div>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="index.html"><span class="brand-mark">N</span>Nanda Tem <span>Guias</span></a>
+<nav aria-label="Navegação principal"><ul class="nav-links">
+<li><a href="guias/index.html">Guias</a></li>
+<li><a href="sobre/index.html">Sobre</a></li>
+<li><a class="store-link" href="https://nandatem.com.br/" target="_blank" rel="noopener">Visitar a loja</a></li>
+</ul></nav></div></header><main>
+<section class="hero"><div class="container hero-inner"><div><div class="eyebrow">Nanda Tem Guias</div><h1>Escolhas mais simples para um dia a dia <em>mais prático.</em></h1><p>Guias, dicas e critérios de compra para ajudar você a entender o que realmente importa antes de escolher produtos para casa, família, pets e rotina.</p><div class="actions"><a class="btn btn-primary" href="guias/index.html">Explorar os guias</a><a class="btn btn-secondary" href="https://nandatem.com.br/produtos" target="_blank" rel="noopener">Conhecer a loja</a></div></div>
+<aside class="hero-card"><div class="kicker">Conteúdo útil</div><h2>Antes de comprar, entenda o que observar.</h2><p>Informação prática sobre características, usos e diferenças entre produtos.</p><div class="mini-list"><div>✓ Critérios práticos de escolha</div><div>✓ Conteúdo por necessidade</div><div>✓ Links comerciais apenas quando relevantes</div></div></aside></div></section>
+<section><div class="container"><div class="section-head"><div class="kicker">Guias em destaque</div><h2>Comece pela sua necessidade</h2><p>Conteúdo original para apoiar decisões de compra sem transformar a página em um catálogo duplicado da loja.</p></div><div class="guide-grid"><article class="guide"><div class="icon">🐾</div><div class="tag">Pets</div><h3>Como escolher acessórios para cães e gatos</h3><p>Material, tamanho, higiene e rotina do animal são critérios úteis antes de escolher acessórios para pets.</p><a class="read" href="guias/como-escolher-acessorios-para-pets.html">Ler guia →</a></article>
+<article class="guide"><div class="icon">🍳</div><div class="tag">Cozinha</div><h3>Utensílios para uma cozinha mais prática: o que observar</h3><p>Veja critérios de material, manutenção, armazenamento e frequência de uso antes de escolher utensílios de cozinha.</p><a class="read" href="guias/utensilios-para-cozinha-pratica.html">Ler guia →</a></article>
+<article class="guide"><div class="icon">🏠</div><div class="tag">Casa</div><h3>Como escolher produtos para organizar a casa</h3><p>Um guia simples sobre medidas, acesso, frequência de uso e manutenção na escolha de produtos de organização.</p><a class="read" href="guias/como-organizar-a-casa.html">Ler guia →</a></article>
+<article class="guide"><div class="icon">👶</div><div class="tag">Bebê</div><h3>O que observar em itens para alimentação infantil</h3><p>Critérios gerais de tamanho, estabilidade, limpeza e adequação à fase da criança ao comparar itens de alimentação infantil.</p><a class="read" href="guias/itens-para-alimentacao-infantil.html">Ler guia →</a></article>
+<article class="guide"><div class="icon">🔧</div><div class="tag">Ferramentas</div><h3>Furadeira ou parafusadeira: como escolher para uso doméstico</h3><p>Entenda quais critérios ajudam a diferenciar furadeiras e parafusadeiras para tarefas domésticas.</p><a class="read" href="guias/furadeira-ou-parafusadeira.html">Ler guia →</a></article></div></div></section>
+<section class="section-soft"><div class="container"><div class="section-head"><div class="kicker">Como usamos os links</div><h2>Conteúdo primeiro, loja como referência.</h2><p>Os guias explicam critérios gerais de escolha. Quando uma categoria da Nanda Tem é relevante para o assunto, ela aparece como referência complementar. Preços e disponibilidade não são reproduzidos aqui porque podem mudar.</p></div></div></section>
+<section><div class="container"><div class="about-box"><div><h2>Sobre o Nanda Tem Guias</h2><p>Espaço editorial de apoio à Nanda Tem, criado para reunir orientações e dicas que facilitem escolhas no dia a dia.</p></div><a class="btn" href="sobre/index.html">Saiba mais</a></div></div></section>
+</main><footer><div class="container"><div class="footer-grid">
+<div><h3>Nanda Tem Guias</h3><p>Conteúdo para escolhas mais informadas e uma rotina mais prática.</p></div>
+<div><h3>Conteúdo</h3><ul class="footer-links"><li><a href="guias/index.html">Todos os guias</a></li><li><a href="sobre/index.html">Sobre</a></li></ul></div>
+<div><h3>Nanda Tem</h3><ul class="footer-links"><li><a href="https://nandatem.com.br/" target="_blank" rel="noopener">Loja oficial</a></li><li><a href="https://nandatem.com.br/faq" target="_blank" rel="noopener">FAQ</a></li><li><a href="https://nandatem.com.br/trocas" target="_blank" rel="noopener">Trocas e devoluções</a></li><li><a href="https://nandatem.com.br/prazos" target="_blank" rel="noopener">Fretes e prazos</a></li></ul></div>
+</div><div class="copyright">© 2026 Nanda Tem Guias · Conteúdo de apoio à Nanda Tem · Niterói/RJ</div></div></footer></body></html>
