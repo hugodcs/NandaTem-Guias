@@ -1,89 +1,177 @@
-:root{
-  --brand:#e85a9a;
-  --brand-hover:#d8498b;
-  --brand-soft:#fff4f8;
-  --text:#222222;
-  --muted:#666666;
-  --line:#e8e8e8;
-  --surface:#ffffff;
-  --surface-soft:#fafafa;
-  --success:#267a46;
-  --shadow:0 4px 18px rgba(0,0,0,.06);
-  --radius:12px;
+/* ==========================================================================
+   NandaTem Guias - Estilos Aprimorados
+   ========================================================================== */
+
+:root {
+  /* Variáveis de Cores - Ajuste a cor primária para combinar exatamente com o logo do site */
+  --nanda-primary: #E63946;    /* Cor de destaque principal (botões, links ativos) */
+  --nanda-secondary: #1D3557;  /* Cor secundária (cabeçalhos, títulos fortes) */
+  --nanda-bg-light: #F4F7F6;   /* Fundo geral da página */
+  --nanda-bg-white: #FFFFFF;   /* Fundo das caixas de conteúdo */
+  --nanda-text: #333333;       /* Texto principal */
+  --nanda-text-muted: #666666; /* Texto secundário (rodapés, legendas) */
+  --nanda-border: #E0E0E0;     /* Bordas sutis */
+  
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --border-radius: 8px;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.65}
-a{color:inherit;text-decoration:none}
-.container{width:min(1180px,calc(100% - 32px));margin:auto}
-.topbar{background:#fff;color:#555;text-align:center;padding:8px 16px;font-size:.82rem;border-bottom:1px solid var(--line)}
-.site-header{background:rgba(255,255,255,.98);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(10px)}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.22rem}
-.brand-mark{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--brand);color:#fff;font-weight:900;font-size:1.25rem}
-.brand span{color:var(--brand)}
-.nav-links{display:flex;gap:22px;align-items:center;list-style:none;font-size:.92rem;font-weight:650}
-.nav-links a:hover{color:var(--brand)}
-.store-link{background:var(--brand);color:#fff!important;padding:10px 16px;border-radius:8px}
-.store-link:hover{background:var(--brand-hover)}
-.hero{background:#fff;border-bottom:1px solid var(--line)}
-.hero-inner{min-height:440px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:48px;padding:60px 0}
-.eyebrow,.kicker{color:var(--brand);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em;margin-bottom:10px}
-h1,h2,h3{font-family:inherit}
-h1{font-size:clamp(2.45rem,5vw,4.35rem);line-height:1.04;letter-spacing:-.045em;font-weight:850}
-h1 em{font-style:normal;color:var(--brand)}
-.hero p{font-size:1.08rem;color:var(--muted);max-width:680px;margin:20px 0 27px}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:8px;font-weight:750}
-.btn-primary{background:var(--brand);color:#fff}
-.btn-primary:hover{background:var(--brand-hover)}
-.btn-secondary{border:1px solid var(--line);background:#fff;color:#333}
-.btn-secondary:hover{border-color:var(--brand);color:var(--brand)}
-.hero-card{background:var(--surface-soft);border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:none}
-.hero-card h2{font-size:1.55rem;line-height:1.2;margin:7px 0 10px}
-.hero-card p{font-size:.96rem;margin:0}
-.mini-list{display:grid;gap:9px;margin-top:18px}
-.mini-list div{padding:11px 13px;border-radius:8px;background:#fff;border:1px solid var(--line);font-size:.91rem;font-weight:650}
-section{padding:64px 0}
-.section-soft{background:var(--surface-soft);border-block:1px solid var(--line)}
-.section-head{max-width:760px;margin-bottom:30px}
-.section-head h2{font-size:clamp(1.9rem,4vw,2.75rem);line-height:1.12;margin:5px 0 10px;font-weight:800;letter-spacing:-.025em}
-.section-head p,.muted{color:var(--muted)}
-.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.guide{border:1px solid var(--line);border-radius:var(--radius);padding:23px;background:#fff;box-shadow:none;display:flex;flex-direction:column;min-height:235px}
-.guide .icon{width:44px;height:44px;border-radius:10px;background:var(--brand-soft);display:grid;place-items:center;font-size:1.25rem;margin-bottom:17px}
-.tag{color:var(--brand);font-size:.73rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em}
-.guide h3{font-size:1.18rem;line-height:1.3;margin:8px 0 9px;font-weight:780}
-.guide p{color:var(--muted);font-size:.93rem;margin-bottom:18px}
-.read{margin-top:auto;color:var(--brand);font-weight:750;font-size:.9rem}
-.guide:hover{border-color:#f0a8c7;box-shadow:var(--shadow);transition:.18s}
-.article-wrap{width:min(850px,calc(100% - 32px));margin:auto}
-.article-hero{background:var(--surface-soft);border-bottom:1px solid var(--line);padding:56px 0}
-.breadcrumbs{font-size:.84rem;color:var(--muted);margin-bottom:18px}
-.breadcrumbs a{color:var(--brand)}
-.article-hero h1{font-size:clamp(2.2rem,5vw,3.75rem);max-width:850px}
-.article-hero .lead{font-size:1.06rem;color:var(--muted);margin-top:17px}
-.article{padding:48px 0}
-.article h2{font-size:1.55rem;margin:32px 0 11px;font-weight:800}
-.article h3{font-size:1.2rem;margin:24px 0 8px}
-.article p{margin-bottom:16px;color:#3c3c3c}
-.article ul{margin:0 0 20px 22px}
-.article li{margin:7px 0}
-.note{background:var(--brand-soft);border:1px solid #f5cadc;border-left:4px solid var(--brand);border-radius:9px;padding:17px;margin:23px 0}
-.cta{background:var(--surface-soft);border:1px solid var(--line);border-radius:12px;padding:26px;margin-top:36px}
-.cta h2{margin:0 0 9px;color:var(--text)}
-.cta p{color:var(--muted)}
-.cta a{color:var(--brand);font-weight:750}
-.about-box{background:var(--surface-soft);border:1px solid var(--line);border-radius:14px;padding:36px;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
-.about-box h2{font-size:2rem;margin-bottom:9px;font-weight:800}
-.about-box p{color:var(--muted)}
-.about-box .btn{justify-self:end;background:var(--brand);color:#fff}
-footer{background:#fff;color:var(--muted);padding:42px 0 25px;border-top:1px solid var(--line)}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
-footer h3{color:var(--text);font-size:.98rem;margin-bottom:10px}
-footer p,footer a{font-size:.88rem;color:var(--muted)}
-footer a:hover{color:var(--brand)}
-.footer-links{list-style:none;display:grid;gap:7px}
-.copyright{border-top:1px solid var(--line);margin-top:29px;padding-top:18px;font-size:.8rem}
-@media(max-width:860px){.nav-links li:not(:last-child){display:none}.hero-inner,.about-box{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr 1fr}.about-box .btn{justify-self:start}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.container,.article-wrap{width:min(100% - 24px,1180px)}.guide-grid,.footer-grid{grid-template-columns:1fr}section{padding:50px 0}.hero-inner{padding:48px 0}.actions .btn{width:100%}.hero-card,.about-box{padding:22px}}
+
+/* ==========================================================================
+   Reset e Configurações Básicas
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--nanda-bg-light);
+  color: var(--nanda-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   Tipografia
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--nanda-secondary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+a {
+  color: var(--nanda-primary);
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+  color: #C1121F;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Estrutura de Layout
+   ========================================================================== */
+header {
+  background-color: var(--nanda-bg-white);
+  padding: 2.5rem 20px;
+  border-bottom: 1px solid var(--nanda-border);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: var(--nanda-text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--nanda-bg-white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 3rem;
+}
+
+/* ==========================================================================
+   Elementos Internos dos Guias (Artigos)
+   ========================================================================== */
+article h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--nanda-bg-light);
+}
+
+article ul, article ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+article li {
+  margin-bottom: 0.5rem;
+}
+
+/* Imagens responsivas e estilizadas */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-sm);
+  display: block;
+}
+
+/* ==========================================================================
+   Botões e Chamadas para Ação (CTAs)
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  background-color: var(--nanda-primary);
+  color: var(--nanda-bg-white);
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #C1121F;
+  color: var(--nanda-bg-white);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==========================================================================
+   Rodapé (Footer)
+   ========================================================================== */
+footer {
+  text-align: center;
+  padding: 2rem 20px;
+  color: var(--nanda-text-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--nanda-border);
+}
+
+/* ==========================================================================
+   Responsividade (Mobile)
+   ========================================================================== */
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem;
+    margin: 0 15px 3rem 15px;
+    width: auto;
+  }
+  
+  header {
+    padding: 2rem 15px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
