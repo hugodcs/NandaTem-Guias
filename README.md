@@ -1,4 +1,4 @@
-# Nanda Tem Guias
+# Nanda Tem Guias — V3
 
 Microsite editorial estático de apoio à Nanda Tem.
 
@@ -16,3 +16,6 @@ GitHub Pages: branch `main`, pasta `/ (root)`.
 
 ## Regra editorial
 Não duplicar descrições de produtos da loja. Não publicar preços fixos. Backlinks devem ser contextuais e relevantes ao conteúdo.
+
+## V3
+Paleta preservada conforme ajuste aprovado e CSS recomposto para suportar homepage, biblioteca de guias, artigos, página Sobre, header, footer e responsividade.
